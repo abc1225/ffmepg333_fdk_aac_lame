@@ -19,4 +19,5 @@ libavcodec/mpegaudiodec_fixed.o: libavcodec/mpegaudiodec_fixed.c config.h \
  libavcodec/arm/mathops.h libavcodec/vlc.h libavcodec/internal.h \
  libavutil/mathematics.h libavcodec/mpegaudiodsp.h \
  libavcodec/mpegaudiodecheader.h libavcodec/mpegaudiodata.h \
- libavcodec/mpegaudiodectab.h libavcodec/mpegaudio_tablegen.h
+ libavcodec/mpegaudiodectab.h libavcodec/mpegaudio_tablegen.h \
+ libavcodec/mpeg4audio.h libavcodec/put_bits.h

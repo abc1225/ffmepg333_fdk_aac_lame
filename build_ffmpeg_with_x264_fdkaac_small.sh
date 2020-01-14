@@ -26,7 +26,6 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --prefix=$PREFIX \
 --enable-cross-compile \
 --disable-runtime-cpudetect \
---disable-asm \
 --arch=$AOSP_ABI \
 --target-os=android \
 --cc=$TOOLCHAIN/bin/$TOOLNAME_BASE-gcc \
@@ -43,13 +42,13 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --enable-version3 \
 --enable-pthreads \
 --enable-libx264 \
+--enable-asm \
 --enable-neon \
 --enable-yasm \
 --enable-runtime-cpudetect \
 --disable-network \
 --disable-vda \
 --disable-iconv \
---enable-asm \
 --disable-encoders \
 --enable-libfdk_aac \
 --enable-libx264 \
@@ -131,7 +130,6 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --enable-protocol=rtmpte \
 --enable-protocol=rtmpts \
 --disable-filters \
---disable-filters \
 --enable-filter=aresample \
 --enable-filter=asetpts \
 --enable-filter=setpts \
@@ -160,7 +158,7 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --extra-ldflags="  "
 
 make clean
-make -j4
+make -j6
 make install
 
 
