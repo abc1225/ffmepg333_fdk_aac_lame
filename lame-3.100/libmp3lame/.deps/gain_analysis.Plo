@@ -1,0 +1,12 @@
+gain_analysis.lo: gain_analysis.c ../config.h ../include/lame.h machine.h \
+ version.h gain_analysis.h
+
+../config.h:
+
+../include/lame.h:
+
+machine.h:
+
+version.h:
+
+gain_analysis.h:

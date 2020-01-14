@@ -1,0 +1,22 @@
+presets.lo: presets.c ../config.h ../include/lame.h machine.h version.h \
+ set_get.h encoder.h util.h l3side.h id3tag.h lame_global_flags.h
+
+../config.h:
+
+../include/lame.h:
+
+machine.h:
+
+version.h:
+
+set_get.h:
+
+encoder.h:
+
+util.h:
+
+l3side.h:
+
+id3tag.h:
+
+lame_global_flags.h:

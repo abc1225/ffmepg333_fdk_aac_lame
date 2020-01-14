@@ -1,0 +1,25 @@
+set_get.lo: set_get.c ../config.h ../include/lame.h machine.h version.h \
+ encoder.h util.h l3side.h id3tag.h lame_global_flags.h bitstream.h \
+ set_get.h
+
+../config.h:
+
+../include/lame.h:
+
+machine.h:
+
+version.h:
+
+encoder.h:
+
+util.h:
+
+l3side.h:
+
+id3tag.h:
+
+lame_global_flags.h:
+
+bitstream.h:
+
+set_get.h:

@@ -1,0 +1,7 @@
+tabinit.lo: tabinit.c ../config.h tabinit.h mpg123.h
+
+../config.h:
+
+tabinit.h:
+
+mpg123.h:

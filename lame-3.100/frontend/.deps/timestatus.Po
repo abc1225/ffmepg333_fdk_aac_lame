@@ -1,0 +1,18 @@
+timestatus.o: timestatus.c ../config.h ../include/lame.h main.h \
+ get_audio.h lametime.h timestatus.h brhist.h console.h
+
+../config.h:
+
+../include/lame.h:
+
+main.h:
+
+get_audio.h:
+
+lametime.h:
+
+timestatus.h:
+
+brhist.h:
+
+console.h:

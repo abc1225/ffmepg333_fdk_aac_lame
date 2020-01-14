@@ -1,0 +1,18 @@
+decode_i386.lo: decode_i386.c ../config.h decode_i386.h common.h mpg123.h \
+ mpglib.h ../include/lame.h dct64_i386.h tabinit.h
+
+../config.h:
+
+decode_i386.h:
+
+common.h:
+
+mpg123.h:
+
+mpglib.h:
+
+../include/lame.h:
+
+dct64_i386.h:
+
+tabinit.h:

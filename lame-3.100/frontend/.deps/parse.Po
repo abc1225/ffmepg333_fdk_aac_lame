@@ -1,0 +1,16 @@
+parse.o: parse.c ../config.h ../include/lame.h parse.h main.h get_audio.h \
+ ../libmp3lame/version.h console.h
+
+../config.h:
+
+../include/lame.h:
+
+parse.h:
+
+main.h:
+
+get_audio.h:
+
+../libmp3lame/version.h:
+
+console.h:

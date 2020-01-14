@@ -1,0 +1,7 @@
+lametime.o: lametime.c ../config.h lametime.h ../include/lame.h
+
+../config.h:
+
+lametime.h:
+
+../include/lame.h:

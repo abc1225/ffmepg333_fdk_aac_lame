@@ -1,0 +1,11 @@
+main.o: main.c ../config.h ../include/lame.h console.h main.h get_audio.h
+
+../config.h:
+
+../include/lame.h:
+
+console.h:
+
+main.h:
+
+get_audio.h:

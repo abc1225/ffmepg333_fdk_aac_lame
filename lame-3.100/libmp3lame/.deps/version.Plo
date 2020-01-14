@@ -1,0 +1,9 @@
+version.lo: version.c ../config.h ../include/lame.h machine.h version.h
+
+../config.h:
+
+../include/lame.h:
+
+machine.h:
+
+version.h:

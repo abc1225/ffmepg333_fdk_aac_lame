@@ -1,0 +1,9 @@
+brhist.o: brhist.c ../config.h brhist.h ../include/lame.h console.h
+
+../config.h:
+
+brhist.h:
+
+../include/lame.h:
+
+console.h:

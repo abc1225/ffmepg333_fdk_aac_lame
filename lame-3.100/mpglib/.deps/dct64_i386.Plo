@@ -1,0 +1,16 @@
+dct64_i386.lo: dct64_i386.c ../config.h dct64_i386.h common.h mpg123.h \
+ mpglib.h ../include/lame.h tabinit.h
+
+../config.h:
+
+dct64_i386.h:
+
+common.h:
+
+mpg123.h:
+
+mpglib.h:
+
+../include/lame.h:
+
+tabinit.h:

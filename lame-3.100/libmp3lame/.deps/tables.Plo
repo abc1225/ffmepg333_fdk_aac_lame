@@ -1,0 +1,12 @@
+tables.lo: tables.c ../config.h machine.h version.h ../include/lame.h \
+ tables.h
+
+../config.h:
+
+machine.h:
+
+version.h:
+
+../include/lame.h:
+
+tables.h:

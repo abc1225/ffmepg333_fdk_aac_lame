@@ -1,0 +1,28 @@
+layer3.lo: layer3.c ../config.h common.h mpg123.h mpglib.h \
+ ../include/lame.h huffman.h ../libmp3lame/machine.h \
+ ../libmp3lame/version.h ../libmp3lame/encoder.h \
+ ../libmp3lame/lame-analysis.h decode_i386.h layer3.h
+
+../config.h:
+
+common.h:
+
+mpg123.h:
+
+mpglib.h:
+
+../include/lame.h:
+
+huffman.h:
+
+../libmp3lame/machine.h:
+
+../libmp3lame/version.h:
+
+../libmp3lame/encoder.h:
+
+../libmp3lame/lame-analysis.h:
+
+decode_i386.h:
+
+layer3.h:

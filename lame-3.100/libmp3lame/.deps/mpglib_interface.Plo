@@ -1,0 +1,30 @@
+mpglib_interface.lo: mpglib_interface.c ../config.h ../include/lame.h \
+ machine.h version.h encoder.h ../mpglib/interface.h ../mpglib/common.h \
+ ../mpglib/mpg123.h ../mpglib/mpglib.h util.h l3side.h id3tag.h \
+ lame_global_flags.h
+
+../config.h:
+
+../include/lame.h:
+
+machine.h:
+
+version.h:
+
+encoder.h:
+
+../mpglib/interface.h:
+
+../mpglib/common.h:
+
+../mpglib/mpg123.h:
+
+../mpglib/mpglib.h:
+
+util.h:
+
+l3side.h:
+
+id3tag.h:
+
+lame_global_flags.h:

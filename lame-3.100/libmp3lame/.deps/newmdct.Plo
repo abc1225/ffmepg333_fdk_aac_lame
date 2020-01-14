@@ -1,0 +1,22 @@
+newmdct.lo: newmdct.c ../config.h ../include/lame.h machine.h version.h \
+ encoder.h util.h l3side.h id3tag.h lame_global_flags.h newmdct.h
+
+../config.h:
+
+../include/lame.h:
+
+machine.h:
+
+version.h:
+
+encoder.h:
+
+util.h:
+
+l3side.h:
+
+id3tag.h:
+
+lame_global_flags.h:
+
+newmdct.h:

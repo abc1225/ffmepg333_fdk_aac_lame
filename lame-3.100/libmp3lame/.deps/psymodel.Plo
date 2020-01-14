@@ -1,0 +1,27 @@
+psymodel.lo: psymodel.c ../config.h ../include/lame.h machine.h version.h \
+ encoder.h util.h l3side.h id3tag.h lame_global_flags.h psymodel.h fft.h \
+ lame-analysis.h
+
+../config.h:
+
+../include/lame.h:
+
+machine.h:
+
+version.h:
+
+encoder.h:
+
+util.h:
+
+l3side.h:
+
+id3tag.h:
+
+lame_global_flags.h:
+
+psymodel.h:
+
+fft.h:
+
+lame-analysis.h:

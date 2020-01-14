@@ -1,0 +1,16 @@
+layer1.lo: layer1.c ../config.h common.h mpg123.h mpglib.h \
+ ../include/lame.h decode_i386.h layer1.h
+
+../config.h:
+
+common.h:
+
+mpg123.h:
+
+mpglib.h:
+
+../include/lame.h:
+
+decode_i386.h:
+
+layer1.h:

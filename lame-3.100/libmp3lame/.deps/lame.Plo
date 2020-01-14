@@ -1,0 +1,38 @@
+lame.lo: lame.c ../config.h ../include/lame.h machine.h version.h \
+ encoder.h util.h l3side.h id3tag.h lame_global_flags.h gain_analysis.h \
+ bitstream.h quantize_pvt.h set_get.h quantize.h psymodel.h VbrTag.h \
+ tables.h
+
+../config.h:
+
+../include/lame.h:
+
+machine.h:
+
+version.h:
+
+encoder.h:
+
+util.h:
+
+l3side.h:
+
+id3tag.h:
+
+lame_global_flags.h:
+
+gain_analysis.h:
+
+bitstream.h:
+
+quantize_pvt.h:
+
+set_get.h:
+
+quantize.h:
+
+psymodel.h:
+
+VbrTag.h:
+
+tables.h:

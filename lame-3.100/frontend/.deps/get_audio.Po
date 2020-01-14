@@ -1,0 +1,14 @@
+get_audio.o: get_audio.c ../config.h ../include/lame.h main.h get_audio.h \
+ lametime.h console.h
+
+../config.h:
+
+../include/lame.h:
+
+main.h:
+
+get_audio.h:
+
+lametime.h:
+
+console.h:

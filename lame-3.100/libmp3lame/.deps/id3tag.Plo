@@ -1,0 +1,22 @@
+id3tag.lo: id3tag.c ../config.h ../include/lame.h machine.h version.h \
+ encoder.h id3tag.h lame_global_flags.h util.h l3side.h bitstream.h
+
+../config.h:
+
+../include/lame.h:
+
+machine.h:
+
+version.h:
+
+encoder.h:
+
+id3tag.h:
+
+lame_global_flags.h:
+
+util.h:
+
+l3side.h:
+
+bitstream.h:

@@ -1,0 +1,16 @@
+lame_main.o: lame_main.c ../config.h ../include/lame.h console.h parse.h \
+ main.h get_audio.h timestatus.h
+
+../config.h:
+
+../include/lame.h:
+
+console.h:
+
+parse.h:
+
+main.h:
+
+get_audio.h:
+
+timestatus.h:

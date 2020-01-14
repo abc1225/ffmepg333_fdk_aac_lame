@@ -1,0 +1,12 @@
+common.lo: common.c ../config.h common.h mpg123.h mpglib.h \
+ ../include/lame.h
+
+../config.h:
+
+common.h:
+
+mpg123.h:
+
+mpglib.h:
+
+../include/lame.h:

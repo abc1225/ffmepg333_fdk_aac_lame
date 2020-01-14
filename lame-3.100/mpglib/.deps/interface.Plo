@@ -1,0 +1,32 @@
+interface.lo: interface.c ../config.h common.h mpg123.h mpglib.h \
+ ../include/lame.h interface.h tabinit.h layer3.h ../libmp3lame/machine.h \
+ ../libmp3lame/version.h ../libmp3lame/VbrTag.h decode_i386.h layer1.h \
+ layer2.h
+
+../config.h:
+
+common.h:
+
+mpg123.h:
+
+mpglib.h:
+
+../include/lame.h:
+
+interface.h:
+
+tabinit.h:
+
+layer3.h:
+
+../libmp3lame/machine.h:
+
+../libmp3lame/version.h:
+
+../libmp3lame/VbrTag.h:
+
+decode_i386.h:
+
+layer1.h:
+
+layer2.h:
