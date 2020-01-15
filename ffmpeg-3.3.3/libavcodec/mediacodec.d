@@ -11,7 +11,4 @@ libavcodec/mediacodec.o: libavcodec/mediacodec.c config.h \
  libavutil/buffer.h libavutil/cpu.h libavutil/channel_layout.h \
  libavutil/dict.h libavutil/frame.h libavutil/buffer.h \
  libavutil/samplefmt.h libavutil/log.h libavutil/pixfmt.h \
- libavutil/rational.h libavcodec/version.h libavutil/version.h \
- libavutil/mem.h libavcodec/ffjni.h libavcodec/mediacodecdec_common.h \
- libavcodec/avcodec.h libavcodec/mediacodec_wrapper.h \
- libavcodec/version.h
+ libavutil/rational.h libavcodec/version.h libavutil/version.h

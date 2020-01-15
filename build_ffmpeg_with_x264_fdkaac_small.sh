@@ -67,6 +67,7 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --disable-muxers \
 --enable-muxer=h264 \
 --enable-muxer=flv \
+--enable-muxer=amr \
 --enable-muxer=gif \
 --enable-muxer=mp3 \
 --enable-muxer=dts \
@@ -74,51 +75,35 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --enable-muxer=mov \
 --enable-muxer=mpegts \
 --enable-muxer=avi \
+--enable-muxer=adts \
 --disable-decoders \
 --enable-jni \
---enable-mediacodec \
+--disable-mediacodec \
 --enable-decoder=h264_mediacodec \
 --enable-hwaccel=h264_mediacodec \
---enable-decoder=aac \
---enable-decoder=aac_latm \
---enable-decoder=mp3 \
---enable-decoder=h263 \
---enable-decoder=h264 \
---enable-decoder=mpeg4 \
---enable-decoder=mjpeg \
---enable-decoder=gif \
---enable-decoder=png \
---enable-decoder=bmp \
---enable-decoder=yuv4 \
+--enable-decoder=mpeg4,h263,h264,flv,gif,hevc,vp8,vp9,wmv3,png,bmp,yuv4,ljpeg,jpeg2000,mjpeg,\
+aac,m4a,amrnb,amrwb,ape,dolby_e,dst,flac,opus,vorbis,wavesynth,wavpack,wmav2,\
+mp3float,mp3,mp3_at,mp3adufloat,mp3adu,mp3on4float,mp3on4,aac_fixed,aac_at,aac_latm,pcm_s16be,pcm_s16le \
 --disable-demuxers \
---enable-demuxer=image2 \
---enable-demuxer=h263 \
---enable-demuxer=h264 \
---enable-demuxer=flv \
---enable-demuxer=gif \
---enable-demuxer=aac \
---enable-demuxer=ogg \
---enable-demuxer=dts \
---enable-demuxer=mp3 \
---enable-demuxer=mov \
---enable-demuxer=m4v \
---enable-demuxer=avi \
---enable-demuxer=mpc \
---enable-demuxer=concat \
---enable-demuxer=mpegts \
---enable-demuxer=mjpeg \
---enable-demuxer=mpegvideo \
---enable-demuxer=rawvideo \
---enable-demuxer=yuv4mpegpipe \
+--enable-demuxer=aac,ac3,amr,amrnb,amrwb,ape,asf,asf_o,ast,avi,caf,cavsvideo,codec2,concat,data,dnxhd,flac,flv,g722,g729,\
+gif,gif_pipe,h263,h264,hevc,hls,image2,image2pipe,ingenient,jpeg_pipe,lavfi,lrc,m4v,mpc,matroska,webm,mjpeg,mpegvideo,rawvideo,yuv4mpegpipe,mov,mp4,m4a,3gp,mp3,mpeg,\
+mpegts,mv,ogg,dts,png_pipe,realtext,rm,rtp,rtsp,s16be,s16le,s24be,s24le,s32be,s32le,sdp,srt,swf,u16be,u16le,u24be,u24le,u32be,u32le,\
+vc1,wav,webm_dash,manifest,xmv,f32be,f32le,f64be,f64le \
 --disable-parsers \
 --enable-parser=aac \
+--enable-parser=aac_latm \
 --enable-parser=ac3 \
+--enable-parser=h263 \
 --enable-parser=h264 \
 --enable-parser=mjpeg \
 --enable-parser=png \
---enable-parser=bmp\
+--enable-parser=bmp \
+--enable-parser=vp8 \
+--enable-parser=vp9 \
 --enable-parser=mpegvideo \
 --enable-parser=mpegaudio \
+--enable-parser=mpeg4video \
+--enable-parser=opus \
 --disable-protocols \
 --enable-protocol=file \
 --enable-protocol=hls \
@@ -129,7 +114,9 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --enable-protocol=rtmpt \
 --enable-protocol=rtmpte \
 --enable-protocol=rtmpts \
---disable-filters \
+--enable-bsfs \
+--enable-postproc \
+--enable-filters \
 --enable-filter=aresample \
 --enable-filter=asetpts \
 --enable-filter=setpts \
@@ -143,6 +130,12 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --enable-filter=transpose \
 --enable-filter=hflip \
 --enable-zlib \
+--enable-avcodec \
+--enable-avformat \
+--enable-avutil \
+--enable-swresample \
+--enable-swscale \
+--enable-avfilter \
 --disable-outdevs \
 --disable-doc \
 --disable-ffplay \
@@ -150,7 +143,6 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --disable-ffserver \
 --disable-debug \
 --disable-ffprobe \
---disable-postproc \
 --disable-avdevice \
 --disable-symver \
 --disable-stripping \
@@ -158,7 +150,7 @@ LAME_LIB=$LIBS_DIR/lame/$AOSP_ABI/lib
 --extra-ldflags="  "
 
 make clean
-make -j6
+make -j4
 make install
 
 
@@ -168,6 +160,7 @@ $TOOLCHAIN/bin/$TOOLNAME_BASE-ld -rpath-link=$PLATFORM/usr/lib -L$PLATFORM/usr/l
     $X264_LIB/libx264.a \
     $LAME_LIB/libmp3lame.a \
     libavcodec/libavcodec.a \
+    libpostproc/libpostproc.a \
     libavfilter/libavfilter.a \
     libswresample/libswresample.a \
     libavformat/libavformat.a \
