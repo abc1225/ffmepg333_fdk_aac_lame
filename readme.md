@@ -88,13 +88,13 @@
 	--enable-decoder=h264_mediacodec \
 	--enable-hwaccel=h264_mediacodec \
 	--enable-decoder=mpeg4,h263,h264,flv,gif,hevc,vp8,vp9,wmv3,png,bmp,yuv4,ljpeg,jpeg2000,mjpeg,\
-	aac,m4a,amrnb,amrwb,ape,dolby_e,dst,flac,opus,vorbis,wavesynth,wavpack,wmav2,\
+	aac,m4a,amrnb,amrwb,ape,dolby_e,dst,flac,opus,vorbis,ac3,alac,eac3,dca,pcm_mulaw,pcm_alaw,wavesynth,wavpack,wmav2,\
 	mp3float,mp3,mp3_at,mp3adufloat,mp3adu,mp3on4float,mp3on4,aac_fixed,aac_at,aac_latm,pcm_s16be,pcm_s16le \
 	--disable-demuxers \
 	--enable-demuxer=aac,ac3,amr,amrnb,amrwb,ape,asf,asf_o,ast,avi,caf,cavsvideo,codec2,concat,data,dnxhd,flac,flv,g722,g729,\
 	gif,gif_pipe,h263,h264,hevc,hls,image2,image2pipe,ingenient,jpeg_pipe,lavfi,lrc,m4v,mpc,matroska,webm,mjpeg,mpegvideo,rawvideo,yuv4mpegpipe,mov,mp4,m4a,3gp,mp3,mpeg,\
 	mpegts,mv,ogg,dts,png_pipe,realtext,rm,rtp,rtsp,s16be,s16le,s24be,s24le,s32be,s32le,sdp,srt,swf,u16be,u16le,u24be,u24le,u32be,u32le,\
-	vc1,wav,webm_dash,manifest,xmv,f32be,f32le,f64be,f64le \
+	vc1,wav,webm_dash,manifest,xmv,f32be,f32le,f64be,f64le,pcm* \
 	--disable-parsers \
 	--enable-parser=aac \
 	--enable-parser=aac_latm \
@@ -131,6 +131,7 @@
 	--enable-filter=concat \
 	--enable-filter=atempo \
 	--enable-filter=movie \
+	--enable-filter=trim \
 	--enable-filter=overlay \
 	--enable-filter=rotate \
 	--enable-filter=transpose \
