@@ -20,10 +20,21 @@
 	>  ./build_x264.sh	 armeabi-v7a
 	>  ./build_ffmpeg_with_x264_fdkaac_small.sh armeabi-v7a
 
+	>  ./build_lame.sh  arm64-v8a
+	>  ./build_fdkaac015.sh	 arm64-v8a
+	>  ./build_x264.sh	 arm64-v8a
+	>  ./build_ffmpeg_with_x264_fdkaac_small.sh arm64-v8a
+
+
+
 ### 3. SO File ###
 
 	./libs/ffmpeg333-x264-fdkaac/armeabi-v7a
 	./libs/ffmpeg333-x264-fdkaac/armeabi-v7a/libffmpeg.so
+
+	./libs/ffmpeg333-x264-fdkaac/arm64-v8a
+	./libs/ffmpeg333-x264-fdkaac/arm64-v8a/libffmpeg.so
+
 
 ### 4. ffmpeg build config ###
 
