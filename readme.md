@@ -25,6 +25,8 @@
 	>  ./build_x264.sh	 arm64-v8a
 	>  ./build_ffmpeg_with_x264_fdkaac_small.sh arm64-v8a
 
+	// 新增了对EXOplayer音频硬解码的支持
+	>  ./build_ffmpeg_with_x264_fdkaac_media.sh arm64-v8a
 
 
 ### 3. SO File ###
